@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://asad-admin:354tag354@cluster0.yuyy7te.mongodb.net/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://asad-admin:<password>@cluster0.yuyy7te.mongodb.net/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
